@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
   ),
-  base: "/runa-developer-portfolio", // 👈 important!
+  base: "/runa-developer-portfolio/", // 👈 important!
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
